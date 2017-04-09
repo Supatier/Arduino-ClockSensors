@@ -86,7 +86,7 @@ void hb() {
   digitalWrite(LED_BUILTIN, HIGH);
   delay(100);
   digitalWrite(LED_BUILTIN, LOW);
-  delay(300);
+  delay(400);
 }
 
 void get_time()
