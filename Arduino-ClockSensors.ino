@@ -65,11 +65,13 @@ void setup() {
   Wire.begin();
   pinMode(LED_BUILTIN, OUTPUT);
   dht.begin();
-  lcd.begin(16, 2);
-  lcd.createChar(1,term);
-  lcd.createChar(2,pic);
   RTC.begin();
   RTC.adjust(DateTime(__DATE__, __TIME__));
+  lcd.begin(16, 2);
+  lcd.createChar(1,term);
+  lcd.createChar(2,pic); 
+  lcd.setCursor(0,0);
+  lcd.print("Hello World");
 }
 
 void loop() {
