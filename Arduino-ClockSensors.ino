@@ -24,6 +24,8 @@ limitations under the License.
 #define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
 
 int DD, MM, YY, H, M, S;
+int sensorPin = A3
+int sensorValue = 0
 
 String sDD;
 String sMM;
